@@ -5,7 +5,7 @@
  *
  * @author Jahidul Pabel Islam <me@jahidulpabelislam.com>
  * @copyright (c) 2012 - 2019 JPI
- * @license: gpl-3.0
+ * @license: GPL-3.0
  */
 window.StickyFooter = (function(jQuery) {
 
