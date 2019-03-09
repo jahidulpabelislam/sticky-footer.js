@@ -1,0 +1,27 @@
+{
+    "name": "sticky-footer.js",
+    "version": "1.0.0",
+    "description": "A jQuery library to create a sticky footer",
+    "main": "src/sticky-footer.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jahidulpabelislam/sticky-footer.git"
+    },
+    "keywords": [
+        "jQuery",
+        "JavaScript",
+        "Sticky",
+        "Footer"
+    ],
+    "author": "Jahidul Pabel Islam <me@jahidulpabelislam.com>",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/jahidulpabelislam/sticky-footer/issues"
+    },
+    "homepage": "https://github.com/jahidulpabelislam/sticky-footer#readme",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-uglify": "^3.0.2"
+    }
+}
