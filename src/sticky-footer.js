@@ -70,4 +70,4 @@ window.StickyFooter = (function(jQuery) {
 
     return StickyFooter;
 
-})(jQuery);
+}(jQuery));
