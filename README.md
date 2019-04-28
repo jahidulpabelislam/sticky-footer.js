@@ -11,6 +11,14 @@ If the length of the normal/original height of the page is smaller than the heig
 I had decided to create this library as I has found my self creating and using this effect/code in all my projects, so thought it will be nice to have it in one place only.
 This way maintenance all use of this effect can be done easily. While also helping the developer community, with this nice small helper library for the front-end.
 
+## How?
+
+Insert script link into the bottom on your HTML body, using the following structure: `https://cdn.jsdelivr.net/gh/jahidulpabelislam/StickyFooter.js@{version}/src/sticky-footer.js` (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/StickyFooter.js@1.0.0}/src/sticky-footer.js`)
+
+Then in your JavaScript file, construct the StickyFooter by `new StickyFooter({mainContentSelector});` (for example `var stickyFooter = new StickyFooter('.main-content');`)
+
+You can store the return from `StickyFooter` to manually trigger an refresh on repositioning by `stickyFooter.repositionFooter();`
+
 ## License
 
 This project is licensed under the terms of the GNU General Public License v3.0 license.
