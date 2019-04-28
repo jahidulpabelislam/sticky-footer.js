@@ -1,6 +1,4 @@
 ;/*
- * sticky-footer.js
- *
  * A library that is used to create a sticky footer effect using jQuery
  *
  * @author Jahidul Pabel Islam <me@jahidulpabelislam.com>
@@ -70,4 +68,4 @@ window.StickyFooter = (function(jQuery) {
 
     return StickyFooter;
 
-}(jQuery));
+})(jQuery);
