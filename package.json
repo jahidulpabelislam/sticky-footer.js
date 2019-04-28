@@ -20,6 +20,9 @@
     },
     "homepage": "https://github.com/jahidulpabelislam/sticky-footer#readme",
     "devDependencies": {
+        "eslint": "^5.15.3",
+        "eslint-config-prettier": "^4.1.0",
+        "eslint-plugin-prettier": "^3.0.1",
         "gulp": "^4.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-uglify": "^3.0.2",
