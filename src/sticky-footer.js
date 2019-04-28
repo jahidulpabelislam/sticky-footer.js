@@ -2,7 +2,7 @@
  * A library that is used to create a sticky footer effect using jQuery
  *
  * @author Jahidul Pabel Islam <me@jahidulpabelislam.com>
- * @copyright (c) 2012 - 2019 JPI
+ * @copyright (c) 2010 - 2019 JPI
  * @license: GPL-3.0
  */
 window.StickyFooter = (function(jQuery) {
