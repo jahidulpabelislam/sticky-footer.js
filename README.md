@@ -16,7 +16,7 @@ This way maintenance all use of this effect can be done easily. While also helpi
 
 ## How?
 
-Insert script link into the bottom on your HTML body, using the following structure: `https://cdn.jsdelivr.net/gh/jahidulpabelislam/StickyFooter.js@{version}/src/sticky-footer.min.js` (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/StickyFooter.js@1.0.0/src/sticky-footer.min.js`)
+Insert script link into the bottom on your HTML body, using the following structure: `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@{version}/src/sticky-footer.min.js` (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.0.0/src/sticky-footer.min.js`)
 
 Then in your JavaScript file, construct the StickyFooter by `new StickyFooter({mainContentSelector});` (for example `var stickyFooter = new StickyFooter('.main-content');`)
 
