@@ -1,5 +1,6 @@
 # StickyFooter.js
 
+[![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/sticky-footer.js/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/sticky-footer.js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fc77f05e8d0743729ef31d7da9e09ed6)](https://www.codacy.com/app/jahidulpabelislam/sticky-footer.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/sticky-footer.js&utm_campaign=Badge_Grade)
 
 ## What?
@@ -15,7 +16,7 @@ This way maintenance all use of this effect can be done easily. While also helpi
 
 ## How?
 
-Insert script link into the bottom on your HTML body, using the following structure: `https://cdn.jsdelivr.net/gh/jahidulpabelislam/StickyFooter.js@{version}/src/sticky-footer.js` (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/StickyFooter.js@1.0.0}/src/sticky-footer.js`)
+Insert script link into the bottom on your HTML body, using the following structure: `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@{version}/src/sticky-footer.min.js` (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.0.0/src/sticky-footer.min.js`)
 
 Then in your JavaScript file, construct the StickyFooter by `new StickyFooter({mainContentSelector});` (for example `var stickyFooter = new StickyFooter('.main-content');`)
 
