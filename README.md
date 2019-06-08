@@ -4,6 +4,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fc77f05e8d0743729ef31d7da9e09ed6)](https://www.codacy.com/app/jahidulpabelislam/sticky-footer.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/sticky-footer.js&utm_campaign=Badge_Grade)
 ![GitHub file size in bytes](https://img.shields.io/github/size/jahidulpabelislam/sticky-footer.js/src/sticky-footer.min.js.svg)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/jahidulpabelislam/sticky-footer.js.svg)
+![GitHub](https://img.shields.io/github/license/jahidulpabelislam/sticky-footer.js.svg)
 
 ## What?
 
