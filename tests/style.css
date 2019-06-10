@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #333333;
+    text-align: center;
+}
+
+.header {
+    background: #333333;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.nav {
+    background: #0375b4;
+    padding: 10px 0;
+}
+
+.nav > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav > ul > li {
+    display: inline-block;
+}
+
+.main-content {
+    background: #ffffff;
+    padding: 10px 0;
+}
+
+p {
+    padding: 8px 0;
+}
+
+.footer {
+    background: lightgrey;
+    padding: 10px 0;
+}
