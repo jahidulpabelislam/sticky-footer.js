@@ -65,7 +65,7 @@ window.StickyFooter = (function(jQuery) {
                 global.mainContentElem.height("auto");
 
                 var windowHeight = global.windowElem.height();
-                var currentPageHeight = fn.getElem("body").height();
+                var currentPageHeight = fn.getElem("html").height();
 
                 // If default height of content is shorter than screen height main content is extended to fill the difference
                 if (windowHeight > currentPageHeight) {
