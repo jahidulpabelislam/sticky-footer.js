@@ -1,4 +1,4 @@
-;/*
+;/**
  * A library that is used to create a sticky footer effect using jQuery
  *
  * @version 1.1.2
@@ -12,7 +12,7 @@ window.StickyFooter = (function(jQuery) {
 
     var StickyFooter = function(mainContentSelector) {
 
-        /*
+        /**
          * Store global variables for the instance
          */
         var global = {
@@ -22,7 +22,7 @@ window.StickyFooter = (function(jQuery) {
 
         var fn = {
 
-            /*
+            /**
              * http://davidwalsh.name/javascript-debounce-function
              */
             debounce: function(func, wait, immediate) {
@@ -47,18 +47,21 @@ window.StickyFooter = (function(jQuery) {
                 };
             },
 
-            /*
+            /**
              * Get a jQuery object by selector, if element exists else return null
              */
             getElem: function(selector) {
-                if (selector && jQuery && jQuery(selector).length) {
-                    return jQuery(selector);
+                if (selector) {
+                    var elem = jQuery(selector);
+                    if (elem.length) {
+                        return elem;
+                    }
                 }
 
                 return null;
             },
 
-            /*
+            /**
              * Check and create the sticky footer effect if default content is too short
              */
             repositionFooter: function() {
