@@ -1,16 +1,16 @@
 ;/**
- * A library that is used to create a sticky footer effect using jQuery
+ * A jQuery plugin that is used to create a sticky footer effect
  *
  * @version 1.1.2
  * @license: GPL-3.0
  * @copyright (c) 2010 - 2019 JPI
  * @author Jahidul Pabel Islam <me@jahidulpabelislam.com>
  */
-window.StickyFooter = (function(jQuery) {
+(function(jQuery) {
 
     "use strict";
 
-    var StickyFooter = function(mainContentSelector) {
+    jQuery.fn.stickyFooter = function() {
 
         /**
          * Store global variables for the instance
@@ -84,17 +84,12 @@ window.StickyFooter = (function(jQuery) {
         };
 
         global.windowElem = fn.getElem(window);
-        global.mainContentElem = fn.getElem(mainContentSelector);
+        global.mainContentElem = fn.getElem(this);
 
         fn.initListeners();
         fn.repositionFooter();
 
-        // Keep a set of public facing functions and only return these to global usage
-        return {
-            repositionFooter: fn.repositionFooter,
-        };
+        return this;
     };
-
-    return StickyFooter;
 
 })(jQuery);

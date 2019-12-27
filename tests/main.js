@@ -1,11 +1,11 @@
-;(function(jQuery, StickyFooter) {
+;(function(jQuery) {
 
     "use strict";
 
     var init = function() {
-        new StickyFooter(".main-content");
+        jQuery(".main-content").stickyFooter();
     };
 
     jQuery(window).on("load", init);
 
-})(jQuery, StickyFooter);
+})(jQuery);
