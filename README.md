@@ -1,12 +1,14 @@
 # StickyFooter.js
 
+[![NPM](https://nodei.co/npm/sticky-footer.js.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/sticky-footer.js)
+
 [![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/sticky-footer.js/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/sticky-footer.js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fc77f05e8d0743729ef31d7da9e09ed6)](https://www.codacy.com/app/jahidulpabelislam/sticky-footer.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/sticky-footer.js&utm_campaign=Badge_Grade)
-![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/jahidulpabelislam/sticky-footer.js.svg?label=release)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/jahidulpabelislam/sticky-footer.js/master.svg?label=last%20release)
-![GitHub file size in bytes](https://img.shields.io/github/size/jahidulpabelislam/sticky-footer.js/src/sticky-footer.min.js.svg)
+![npm](https://img.shields.io/npm/v/sticky-footer.js.svg)
+![npm](https://img.shields.io/npm/dm/sticky-footer.js.svg)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/jahidulpabelislam/sticky-footer.js.svg)
-![GitHub](https://img.shields.io/github/license/jahidulpabelislam/sticky-footer.js.svg)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/jahidulpabelislam/sticky-footer.js/master.svg?label=last%20release)![npm bundle size](https://img.shields.io/bundlephobia/min/sticky-footer.js.svg)
+![NPM](https://img.shields.io/npm/l/sticky-footer.js.svg)
 
 ## What?
 
@@ -21,7 +23,14 @@ This way maintenance all use of this effect can be done easily. While also helpi
 
 ## How?
 
-Insert script link into the bottom on your HTML body, using the following structure: `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@{version}/src/sticky-footer.min.js` (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.0.0/src/sticky-footer.min.js`)
+Firstly you will need a copy of one of the two `js` files either the minified or non-minified version (`sticky-footer.js` or `sticky-footer.min.js`).
+You can install it various ways:
+
+-   via NPM ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
+-   using jsDelivr CDN (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.1.3/src/sticky-footer.min.js`)
+-   downloaded directly from GitHub
+
+Next insert the script link into your HTML (`sticky-footer.js` or `sticky-footer.min.js`).
 
 Then in your JavaScript file, construct the StickyFooter by `new StickyFooter({mainContentSelector});` (for example `var stickyFooter = new StickyFooter('.main-content');`)
 
