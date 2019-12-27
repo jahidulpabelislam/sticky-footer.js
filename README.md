@@ -23,7 +23,14 @@ This way maintenance all use of this effect can be done easily. While also helpi
 
 ## How?
 
-Insert script link into the bottom on your HTML body, using the following structure: `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@{version}/src/sticky-footer.min.js` (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.0.0/src/sticky-footer.min.js`)
+Firstly you will need a copy of one of the two `js` files either the minified or non-minified version (`sticky-footer.js` or `sticky-footer.min.js`).
+You can install it various ways:
+
+-   via NPM ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
+-   using jsDelivr CDN (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.1.1/src/sticky-footer.min.js`)
+-   downloaded directly from GitHub
+
+Next insert the script link into your HTML (`sticky-footer.js` or `sticky-footer.min.js`).
 
 Then in your JavaScript file, construct the StickyFooter by `new StickyFooter({mainContentSelector});` (for example `var stickyFooter = new StickyFooter('.main-content');`)
 
