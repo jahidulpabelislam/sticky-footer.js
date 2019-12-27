@@ -27,7 +27,7 @@ Firstly you will need a copy of one of the two `js` files either the minified or
 You can install it various ways:
 
 -   via NPM ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
--   using jsDelivr CDN (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.1.1/src/sticky-footer.min.js`)
+-   using jsDelivr CDN (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.1.3/src/sticky-footer.min.js`)
 -   downloaded directly from GitHub
 
 Next insert the script link into your HTML (`sticky-footer.js` or `sticky-footer.min.js`).
