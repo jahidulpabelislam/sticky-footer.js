@@ -10,6 +10,45 @@
 
     "use strict";
 
+    /**
+     * http://davidwalsh.name/javascript-debounce-function
+     */
+    var debounce = function(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this,
+                args = arguments;
+
+            var later = function() {
+                timeout = null;
+                if (!immediate) {
+                    func.apply(context, args);
+                }
+            };
+
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) {
+                func.apply(context, args);
+            }
+        };
+    };
+
+    /**
+     * Get a jQuery object by selector, if element exists else return null
+     */
+    var getElem = function(selector) {
+        if (selector) {
+            var elem = jQuery(selector);
+            if (elem.length) {
+                return elem;
+            }
+        }
+
+        return null;
+    };
+
     jQuery.fn.stickyFooter = function() {
 
         /**
@@ -23,45 +62,6 @@
         var fn = {
 
             /**
-             * http://davidwalsh.name/javascript-debounce-function
-             */
-            debounce: function(func, wait, immediate) {
-                var timeout;
-                return function() {
-                    var context = this,
-                        args = arguments;
-
-                    var later = function() {
-                        timeout = null;
-                        if (!immediate) {
-                            func.apply(context, args);
-                        }
-                    };
-
-                    var callNow = immediate && !timeout;
-                    clearTimeout(timeout);
-                    timeout = setTimeout(later, wait);
-                    if (callNow) {
-                        func.apply(context, args);
-                    }
-                };
-            },
-
-            /**
-             * Get a jQuery object by selector, if element exists else return null
-             */
-            getElem: function(selector) {
-                if (selector) {
-                    var elem = jQuery(selector);
-                    if (elem.length) {
-                        return elem;
-                    }
-                }
-
-                return null;
-            },
-
-            /**
              * Check and create the sticky footer effect if default content is too short
              */
             repositionFooter: function() {
@@ -69,7 +69,7 @@
                 global.mainContentElem.height("auto");
 
                 var windowHeight = global.windowElem.height();
-                var currentPageHeight = fn.getElem("html").height();
+                var currentPageHeight = getElem("html").height();
 
                 // If default height of content is shorter than screen height main content is extended to fill the difference
                 if (windowHeight > currentPageHeight) {
@@ -79,12 +79,12 @@
             },
 
             initListeners: function() {
-                global.windowElem.on("orientationchange resize", fn.debounce(fn.repositionFooter, 150));
+                global.windowElem.on("orientationchange resize", debounce(fn.repositionFooter, 150));
             },
         };
 
-        global.windowElem = fn.getElem(window);
-        global.mainContentElem = fn.getElem(this);
+        global.windowElem = getElem(window);
+        global.mainContentElem = getElem(this);
 
         fn.initListeners();
         fn.repositionFooter();
