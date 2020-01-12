@@ -64,7 +64,7 @@ window.StickyFooter = (function(jQuery) {
              */
             repositionFooter: function() {
                 // Make section default height to work out if content is too small or big
-                global.mainContentElem.height("auto");
+                global.mainContentElem.height("");
 
                 var windowHeight = global.windowElem.height();
                 var currentPageHeight = global.htmlElem.height();
