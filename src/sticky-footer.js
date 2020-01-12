@@ -1,7 +1,7 @@
 ;/**
  * A library that is used to create a sticky footer effect using jQuery
  *
- * @version 1.1.2
+ * @version 1.1.3
  * @license: GPL-3.0
  * @copyright (c) 2010 - 2019 JPI
  * @author Jahidul Pabel Islam <me@jahidulpabelislam.com>
@@ -17,6 +17,7 @@ window.StickyFooter = (function(jQuery) {
          */
         var global = {
             windowElem: null,
+            htmlElem: null,
             mainContentElem: null,
         };
 
@@ -52,10 +53,7 @@ window.StickyFooter = (function(jQuery) {
              */
             getElem: function(selector) {
                 if (selector) {
-                    var elem = jQuery(selector);
-                    if (elem.length) {
-                        return elem;
-                    }
+                    return jQuery(selector);
                 }
 
                 return null;
@@ -66,10 +64,10 @@ window.StickyFooter = (function(jQuery) {
              */
             repositionFooter: function() {
                 // Make section default height to work out if content is too small or big
-                global.mainContentElem.height("auto");
+                global.mainContentElem.height("");
 
                 var windowHeight = global.windowElem.height();
-                var currentPageHeight = fn.getElem("html").height();
+                var currentPageHeight = global.htmlElem.height();
 
                 // If default height of content is shorter than screen height main content is extended to fill the difference
                 if (windowHeight > currentPageHeight) {
@@ -84,6 +82,7 @@ window.StickyFooter = (function(jQuery) {
         };
 
         global.windowElem = fn.getElem(window);
+        global.htmlElem = fn.getElem("html");
         global.mainContentElem = fn.getElem(mainContentSelector);
 
         fn.initListeners();
