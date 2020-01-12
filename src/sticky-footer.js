@@ -17,6 +17,7 @@ window.StickyFooter = (function(jQuery) {
          */
         var global = {
             windowElem: null,
+            htmlElem: null,
             mainContentElem: null,
         };
 
@@ -66,7 +67,7 @@ window.StickyFooter = (function(jQuery) {
                 global.mainContentElem.height("auto");
 
                 var windowHeight = global.windowElem.height();
-                var currentPageHeight = fn.getElem("html").height();
+                var currentPageHeight = global.htmlElem.height();
 
                 // If default height of content is shorter than screen height main content is extended to fill the difference
                 if (windowHeight > currentPageHeight) {
@@ -81,6 +82,7 @@ window.StickyFooter = (function(jQuery) {
         };
 
         global.windowElem = fn.getElem(window);
+        global.htmlElem = fn.getElem("html");
         global.mainContentElem = fn.getElem(mainContentSelector);
 
         fn.initListeners();
