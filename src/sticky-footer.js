@@ -40,10 +40,7 @@
      */
     var getElem = function(selector) {
         if (selector) {
-            var elem = jQuery(selector);
-            if (elem.length) {
-                return elem;
-            }
+            return jQuery(selector);
         }
 
         return null;
@@ -56,6 +53,7 @@
          */
         var global = {
             windowElem: null,
+            htmlElem: null,
             mainContentElem: null,
         };
 
@@ -66,10 +64,10 @@
              */
             repositionFooter: function() {
                 // Make section default height to work out if content is too small or big
-                global.mainContentElem.height("auto");
+                global.mainContentElem.height("");
 
                 var windowHeight = global.windowElem.height();
-                var currentPageHeight = getElem("html").height();
+                var currentPageHeight = global.htmlElem.height();
 
                 // If default height of content is shorter than screen height main content is extended to fill the difference
                 if (windowHeight > currentPageHeight) {
@@ -84,6 +82,7 @@
         };
 
         global.windowElem = getElem(window);
+        global.htmlElem = getElem("html");
         global.mainContentElem = getElem(this);
 
         fn.initListeners();
