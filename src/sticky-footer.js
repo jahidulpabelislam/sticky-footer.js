@@ -52,7 +52,7 @@ window.StickyFooter = (function(jQuery) {
              * Get a jQuery object by selector, if element exists else return null
              */
             getElem: function(selector) {
-                if (selector && jQuery && jQuery(selector).length) {
+                if (selector && jQuery) {
                     return jQuery(selector);
                 }
 
