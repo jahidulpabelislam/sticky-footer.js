@@ -32,7 +32,7 @@ You can install it various ways:
 
 Next insert the script link into your HTML (`sticky-footer.min.js` or `sticky-footer.js`).
 
-Then in your JavaScript file, call the StickyFooter.js function by `jQuery(mainContentSelector).stickyFooter();` (for example `jQuery('.main-content').stickyFooter();`)
+Then in your JavaScript file, call the StickyFooter.js function by `jQuery(mainContentSelector).adjustHeightForScreen();` (for example `jQuery('.main-content').adjustHeightForScreen();`)
 
 ## License
 

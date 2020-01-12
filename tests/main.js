@@ -3,7 +3,7 @@
     "use strict";
 
     var init = function() {
-        jQuery(".main-content").stickyFooter();
+        jQuery(".main-content").adjustHeightForScreen();
     };
 
     jQuery(window).on("load", init);

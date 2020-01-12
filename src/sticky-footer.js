@@ -49,7 +49,7 @@
         return null;
     };
 
-    jQuery.fn.stickyFooter = function() {
+    jQuery.fn.adjustHeightForScreen = function() {
 
         /**
          * Store global variables for the instance
