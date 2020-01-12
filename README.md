@@ -32,9 +32,7 @@ You can install it various ways:
 
 Next insert the script link into your HTML (`sticky-footer.min.js` or `sticky-footer.js`).
 
-Then in your JavaScript file, construct the StickyFooter by `new StickyFooter({mainContentSelector});` (for example `var stickyFooter = new StickyFooter('.main-content');`)
-
-You can store the return from `StickyFooter` to manually trigger an refresh on repositioning by `stickyFooter.repositionFooter();`
+Then in your JavaScript file, call the StickyFooter.js function by `jQuery(mainContentSelector).stickyFooter();` (for example `jQuery('.main-content').stickyFooter();`)
 
 ## License
 
