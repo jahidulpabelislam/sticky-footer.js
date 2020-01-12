@@ -62,7 +62,7 @@
             /**
              * Check and create the sticky footer effect if default content is too short
              */
-            repositionFooter: function() {
+            updateContentHeight: function() {
                 // Make section default height to work out if content is too small or big
                 global.mainContentElem.height("");
 
@@ -77,7 +77,7 @@
             },
 
             initListeners: function() {
-                global.windowElem.on("orientationchange resize", debounce(fn.repositionFooter, 150));
+                global.windowElem.on("orientationchange resize", debounce(fn.updateContentHeight, 150));
             },
         };
 
@@ -86,7 +86,7 @@
         global.mainContentElem = getElem(this);
 
         fn.initListeners();
-        fn.repositionFooter();
+        fn.updateContentHeight();
 
         return this;
     };
