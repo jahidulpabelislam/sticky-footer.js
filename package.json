@@ -6,7 +6,10 @@
         "Footer",
         "JavaScript",
         "Sticky",
-        "jQuery"
+        "jQuery",
+        "HTML",
+        "jquery-plugin",
+        "ecosystem:jquery"
     ],
     "homepage": "https://github.com/jahidulpabelislam/sticky-footer#readme",
     "bugs": {
