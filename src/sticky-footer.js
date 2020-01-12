@@ -64,7 +64,7 @@ window.StickyFooter = (function(jQuery) {
              */
             repositionFooter: function() {
                 // Make section default height to work out if content is too small or big
-                global.mainContentElem.height("");
+                global.mainContentElem.css("min-height", "");
 
                 var windowHeight = global.windowElem.height();
                 var currentPageHeight = global.htmlElem.height();
@@ -72,7 +72,7 @@ window.StickyFooter = (function(jQuery) {
                 // If default height of content is shorter than screen height main content is extended to fill the difference
                 if (windowHeight > currentPageHeight) {
                     var newHeight = windowHeight - currentPageHeight + global.mainContentElem.height();
-                    global.mainContentElem.height(newHeight);
+                    global.mainContentElem.css("min-height", newHeight);
                 }
             },
 
