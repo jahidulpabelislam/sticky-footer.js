@@ -51,42 +51,29 @@
         /**
          * Store global variables for the instance
          */
-        var global = {
-            windowElem: null,
-            htmlElem: null,
-            mainContentElem: null,
+        var windowElem = getElem(window);
+        var htmlElem = getElem("html");
+        var mainContentElem = getElem(this);
+
+        /**
+         * Check and create the sticky footer effect if default content is too short
+         */
+        var updateContentHeight = function() {
+            // Make section default height to work out if content is too small or big
+            mainContentElem.height("");
+
+            var windowHeight = windowElem.height();
+            var currentPageHeight = htmlElem.height();
+
+            // If default height of content is shorter than screen height main content is extended to fill the difference
+            if (windowHeight > currentPageHeight) {
+                var newHeight = windowHeight - currentPageHeight + mainContentElem.height();
+                mainContentElem.height(newHeight);
+            }
         };
 
-        var fn = {
-
-            /**
-             * Check and create the sticky footer effect if default content is too short
-             */
-            updateContentHeight: function() {
-                // Make section default height to work out if content is too small or big
-                global.mainContentElem.height("");
-
-                var windowHeight = global.windowElem.height();
-                var currentPageHeight = global.htmlElem.height();
-
-                // If default height of content is shorter than screen height main content is extended to fill the difference
-                if (windowHeight > currentPageHeight) {
-                    var newHeight = windowHeight - currentPageHeight + global.mainContentElem.height();
-                    global.mainContentElem.height(newHeight);
-                }
-            },
-
-            initListeners: function() {
-                global.windowElem.on("orientationchange resize", debounce(fn.updateContentHeight, 150));
-            },
-        };
-
-        global.windowElem = getElem(window);
-        global.htmlElem = getElem("html");
-        global.mainContentElem = getElem(this);
-
-        fn.initListeners();
-        fn.updateContentHeight();
+        updateContentHeight();
+        windowElem.on("orientationchange resize", debounce(updateContentHeight, 150));
 
         return this;
     };
