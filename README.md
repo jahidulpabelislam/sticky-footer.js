@@ -44,6 +44,24 @@ Then in your JavaScript, construct the StickyFooter and pass the main element se
 
 You can store the returned value from `StickyFooter` to then later manually trigger a refresh on repositioning, by calling the `repositionFooter` function on that returned object.
 
+## Support
+
+### jQuery
+
+Has been tested with all major versions - v1+
+
+### Browser
+
+Has been tested on all major browsers
+
+-   Chrome
+-   Firefox
+-   Safari
+-   Android Browser
+-   Edge
+-   IE
+-   Opera
+
 ## License
 
 This project is licensed under the terms of the GNU General Public License v3.0 license.
