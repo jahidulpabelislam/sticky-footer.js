@@ -31,7 +31,7 @@ This makes it easier to maintain all uses of this effect. While also helping the
 
 ### Requirements
 
--   jQuery v1.7+
+-   jQuery v1+
 
 ### Installation
 
@@ -39,7 +39,7 @@ Firstly you will need a copy of one of two `js` files either the minified or non
 You can install it in various ways:
 
 -   via NPM - `npm install sticky-footer.js` ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
--   using jsDelivr CDN - [https://www.jsdelivr.com/package/npm/sticky-footer.js](https://www.jsdelivr.com/package/npm/sticky-footer.js) (for example `https://cdn.jsdelivr.net/npm/sticky-footer.js@1.2.2/src/sticky-footer.min.js`)
+-   using jsDelivr CDN - [https://www.jsdelivr.com/package/npm/sticky-footer.js](https://www.jsdelivr.com/package/npm/sticky-footer.js) (for example `https://cdn.jsdelivr.net/npm/sticky-footer.js@1.3.0/src/sticky-footer.min.js`)
 -   download file directly
 
 ### Set up
@@ -54,7 +54,7 @@ You can store the returned value from `StickyFooter` to then later manually trig
 
 ### jQuery
 
-Has been tested with all major versions from v1.7
+Has been tested with all major versions
 
 ### Browser
 

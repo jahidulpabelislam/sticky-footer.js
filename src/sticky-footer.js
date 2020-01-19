@@ -1,7 +1,7 @@
 ;/**
  * A library that is used to create a sticky footer effect using jQuery
  *
- * @version 1.2.0
+ * @version 1.3.0
  * @license: GPL-3.0
  * @copyright (c) 2010 - 2019 JPI
  * @author Jahidul Pabel Islam <me@jahidulpabelislam.com>
@@ -59,6 +59,15 @@ window.StickyFooter = (function(jQuery) {
                 return null;
             },
 
+            addListener: function(element, events, callback) {
+                if (jQuery.fn.on) {
+                    element.on(events.join(" "), callback);
+                }
+                else {
+                    element.bind(events.join(" "), callback);
+                }
+            },
+
             /**
              * Check and create the sticky footer effect if default content is too short
              */
@@ -77,7 +86,8 @@ window.StickyFooter = (function(jQuery) {
             },
 
             initListeners: function() {
-                global.windowElem.on("orientationchange resize", fn.debounce(fn.repositionFooter, 150));
+                var reposition = fn.debounce(fn.repositionFooter, 150);
+                fn.addListener(global.windowElem, ["orientationchange", "resize"], reposition);
             },
         };
 
