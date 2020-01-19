@@ -44,7 +44,7 @@ You can install it various ways:
 
 ### Set up
 
-Next insert the script/file into the necessary pages (`sticky-footer.min.js` or `sticky-footer.js`).
+Next insert the script/file into the necessary pages (`sticky-footer.min.js` or `sticky-footer.js`) as well as jQuery if not already.
 
 Then in your JavaScript, construct the StickyFooter and pass the main element selector as its only parameter. The main content selector being the selector of the element that should grow if the content isn't long enough. (for example `var stickyFooter = new StickyFooter('.main-content');`).
 
