@@ -23,12 +23,20 @@ This way maintenance all use of this effect can be done easily. While also helpi
 
 ## How?
 
+### Requirements
+
+-   jQuery 1+
+
+### Installation
+
 Firstly you will need a copy of one of two `js` files either the minified or non-minified version (`sticky-footer.min.js` or `sticky-footer.js`).
 You can install it various ways:
 
 -   via NPM - `npm install sticky-footer.js` ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
 -   using jsDelivr CDN - [https://www.jsdelivr.com/package/npm/sticky-footer.js](https://www.jsdelivr.com/package/npm/sticky-footer.js) (for example `https://cdn.jsdelivr.net/npm/sticky-footer.js@1.2.1/src/sticky-footer.min.js`)
 -   download file directly
+
+### Set up
 
 Next insert the script/file into the necessary pages (`sticky-footer.min.js` or `sticky-footer.js`).
 
