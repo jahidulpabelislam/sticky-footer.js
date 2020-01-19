@@ -23,18 +23,18 @@ This way maintenance all use of this effect can be done easily. While also helpi
 
 ## How?
 
-Firstly you will need a copy of one of the two `js` files either the minified or non-minified version (`sticky-footer.js` or `sticky-footer.min.js`).
+Firstly you will need a copy of one of two `js` files either the minified or non-minified version (`sticky-footer.min.js` or `sticky-footer.js`).
 You can install it various ways:
 
--   via NPM ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
--   using jsDelivr CDN (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.2.1/src/sticky-footer.min.js`)
--   downloaded directly from GitHub
+-   via NPM - `npm install sticky-footer.js` ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
+-   using jsDelivr CDN - [https://www.jsdelivr.com/package/npm/sticky-footer.js](https://www.jsdelivr.com/package/npm/sticky-footer.js) (for example `https://cdn.jsdelivr.net/npm/sticky-footer.js@1.2.1/src/sticky-footer.min.js`)
+-   download file directly
 
-Next insert the script link into your HTML (`sticky-footer.js` or `sticky-footer.min.js`).
+Next insert the script/file into the necessary pages (`sticky-footer.min.js` or `sticky-footer.js`).
 
-Then in your JavaScript file, construct the StickyFooter by `new StickyFooter({mainContentSelector});` (for example `var stickyFooter = new StickyFooter('.main-content');`)
+Then in your JavaScript, construct the StickyFooter and pass the main element selector as its only parameter. The main content selector being the selector of the element that should grow if the content isn't long enough. (for example `var stickyFooter = new StickyFooter('.main-content');`).
 
-You can store the return from `StickyFooter` to manually trigger an refresh on repositioning by `stickyFooter.repositionFooter();`
+You can store the returned value from `StickyFooter` to then later manually trigger a refresh on repositioning, by calling the `repositionFooter` function on that returned object.
 
 ## License
 
