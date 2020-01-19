@@ -14,7 +14,7 @@
 
 A very small and lightweight library to create a sticky footer effect just using JavaScript & jQuery.
 
-If the length of the normal/original height of the page is smaller than the height of the window, the library will then extend the 'main content' element to fill the remaining space.
+If the original/normal height of the page is shorter than the window height, the library will extend the 'main content' element to fill the remaining space. This will essentially push the `footer` element down to the bottom of the page creating the sticky footer.
 
 -   lightweight - file size: 4kb & 1kb minified, package size: 65kb & 21kb minified
 -   one & only dependency is jQuery
@@ -24,8 +24,8 @@ If the length of the normal/original height of the page is smaller than the heig
 
 ## Why?
 
-I had decided to create this library as I has found my self creating and using this effect/code in all my projects, so thought it will be nice to only have it in one place.
-This way maintenance all use of this effect can be done easily. While also helping the developer community, with this nice small helper library for the front-end.
+I decided to create this library as I have found myself recreating and using this effect/code in all my projects, so thought it would be better to only have it in one place.
+This makes it easier to maintain all uses of this effect. While also helping the developer community, with this small helper library for the front-end.
 
 ## How?
 
@@ -36,7 +36,7 @@ This way maintenance all use of this effect can be done easily. While also helpi
 ### Installation
 
 Firstly you will need a copy of one of two `js` files either the minified or non-minified version (`sticky-footer.min.js` or `sticky-footer.js`).
-You can install it various ways:
+You can install it in various ways:
 
 -   via NPM - `npm install sticky-footer.js` ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
 -   using jsDelivr CDN - [https://www.jsdelivr.com/package/npm/sticky-footer.js](https://www.jsdelivr.com/package/npm/sticky-footer.js) (for example `https://cdn.jsdelivr.net/npm/sticky-footer.js@1.2.2/src/sticky-footer.min.js`)
@@ -46,7 +46,7 @@ You can install it various ways:
 
 Next insert the script/file into the necessary pages (`sticky-footer.min.js` or `sticky-footer.js`) as well as jQuery if not already.
 
-Then in your JavaScript, construct the StickyFooter and pass the main element selector as its only parameter. The main content selector being the selector of the element that should grow if the content isn't long enough. (for example `var stickyFooter = new StickyFooter('.main-content');`).
+Then in your JavaScript, construct the StickyFooter and pass the 'main element' selector as its only parameter. The 'main content' selector being the selector of the element that should grow if the content isn't long enough. (for example `var stickyFooter = new StickyFooter('.main-content');`).
 
 You can store the returned value from `StickyFooter` to then later manually trigger a refresh on repositioning, by calling the `repositionFooter` function on that returned object.
 
