@@ -31,7 +31,7 @@ This way maintenance all use of this effect can be done easily. While also helpi
 
 ### Requirements
 
--   jQuery 1+
+-   jQuery v1.7+
 
 ### Installation
 
@@ -54,7 +54,7 @@ You can store the returned value from `StickyFooter` to then later manually trig
 
 ### jQuery
 
-Has been tested with all major versions - v1+
+Has been tested with all major versions from v1.7
 
 ### Browser
 
