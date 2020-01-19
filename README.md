@@ -14,17 +14,17 @@
 
 A very small and lightweight library to create a sticky footer effect just using JavaScript & jQuery.
 
-If the length of the normal/original height of the page is smaller than the height of the window, the library will then extent the 'main content' element to to fill the remaining space.
+If the length of the normal/original height of the page is smaller than the height of the window, the library will then extend the 'main content' element to fill the remaining space.
 
 -   lightweight - file size: 4kb & 1kb minified, package size: 65kb & 21kb minified
+-   one & only dependency is jQuery
 -   all major browsers supported
--   jQuery only dependency
 -   no extra CSS needed
 -   simple to use
 
 ## Why?
 
-I had decided to create this library as I has found my self creating and using this effect/code in all my projects, so thought it will be nice to have it in one place only.
+I had decided to create this library as I has found my self creating and using this effect/code in all my projects, so thought it will be nice to only have it in one place.
 This way maintenance all use of this effect can be done easily. While also helping the developer community, with this nice small helper library for the front-end.
 
 ## How?
