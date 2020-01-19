@@ -12,7 +12,7 @@
 
 ## What?
 
-A small library to create a sticky footer effect using JavaScript & jQuery.
+A very small and lightweight library to create a sticky footer effect just using JavaScript & jQuery.
 
 If the length of the normal/original height of the page is smaller than the height of the window, the library will then extent the 'main content' element to to fill the remaining space.
 
