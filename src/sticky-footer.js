@@ -60,12 +60,8 @@ window.StickyFooter = (function(jQuery) {
             },
 
             addListener: function(element, events, callback) {
-                if (jQuery.fn.on) {
-                    element.on(events.join(" "), callback);
-                }
-                else {
-                    element.bind(events.join(" "), callback);
-                }
+                var adder = jQuery.fn.on ? "on" : "bind";
+                element[adder](events.join(" "), callback);
             },
 
             /**
