@@ -12,27 +12,59 @@
 
 ## What?
 
-A small library to create a sticky footer effect using JavaScript & jQuery.
+A very small and lightweight library to create a sticky footer effect just using JavaScript & jQuery.
 
-If the length of the normal/original height of the page is smaller than the height of the window, the library will then extent the 'main content' element to to fill the remaining space.
+If the original/normal height of the page is shorter than the window height, the library will extend the 'main content' element to fill the remaining space. This will essentially push the `footer` element down to the bottom of the page creating the sticky footer.
+
+-   lightweight - file size: 4kb & 1kb minified, package size: 65kb & 21kb minified
+-   one & only dependency is jQuery
+-   all major browsers supported
+-   no extra CSS needed
+-   simple to use
 
 ## Why?
 
-I had decided to create this library as I has found my self creating and using this effect/code in all my projects, so thought it will be nice to have it in one place only.
-This way maintenance all use of this effect can be done easily. While also helping the developer community, with this nice small helper library for the front-end.
+I decided to create this library as I have found myself recreating and using this effect/code in all my projects, so thought it would be better to only have it in one place.
+This makes it easier to maintain all uses of this effect. While also helping the developer community, with this small helper library for the front-end.
 
 ## How?
 
-Firstly you will need a copy of one of the two `js` files either the minified or non-minified version (`sticky-footer.min.js` or `sticky-footer.js`).
-You can install it various ways:
+### Requirements
 
--   via NPM ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
--   using jsDelivr CDN (for example `https://cdn.jsdelivr.net/gh/jahidulpabelislam/sticky-footer.js@1.1.4/src/sticky-footer.min.js`)
--   downloaded directly from GitHub
+-   jQuery v1+
+
+### Installation
+
+Firstly you will need a copy of one of two `js` files either the minified or non-minified version (`sticky-footer.min.js` or `sticky-footer.js`).
+You can install it in various ways:
+
+-   via NPM - `npm install sticky-footer.js` ([https://www.npmjs.com/package/sticky-footer.js](https://www.npmjs.com/package/sticky-footer.js))
+-   using jsDelivr CDN - [https://www.jsdelivr.com/package/npm/sticky-footer.js](https://www.jsdelivr.com/package/npm/sticky-footer.js) (for example `https://cdn.jsdelivr.net/npm/sticky-footer.js@1.3.0/src/sticky-footer.min.js`)
+-   download file directly
+
+### Set up
 
 Next insert the script link into your HTML (`sticky-footer.min.js` or `sticky-footer.js`).
 
 Then in your JavaScript file, call the StickyFooter.js function by `jQuery(mainContentSelector).adjustHeightForScreen();` (for example `jQuery('.main-content').adjustHeightForScreen();`)
+
+## Support
+
+### jQuery
+
+Has been tested with all major versions
+
+### Browser
+
+Has been tested on all major browsers
+
+-   Chrome
+-   Firefox
+-   Safari
+-   Android Browser
+-   Edge
+-   IE
+-   Opera
 
 ## License
 

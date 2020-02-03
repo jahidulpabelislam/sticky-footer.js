@@ -46,6 +46,11 @@
         return null;
     };
 
+    var addListener = function(element, events, callback) {
+        var adder = jQuery.fn.on ? "on" : "bind";
+        element[adder](events.join(" "), callback);
+    };
+
     jQuery.fn.adjustHeightForScreen = function() {
 
         /**
@@ -60,7 +65,7 @@
          */
         var updateContentHeight = function() {
             // Make section default height to work out if content is too small or big
-            mainContentElem.height("");
+            mainContentElem.css("min-height", "");
 
             var windowHeight = windowElem.height();
             var currentPageHeight = htmlElem.height();
@@ -68,12 +73,13 @@
             // If default height of content is shorter than screen height main content is extended to fill the difference
             if (windowHeight > currentPageHeight) {
                 var newHeight = windowHeight - currentPageHeight + mainContentElem.height();
-                mainContentElem.height(newHeight);
+                mainContentElem.css("min-height", newHeight);
             }
         };
 
         updateContentHeight();
-        windowElem.on("orientationchange resize", debounce(updateContentHeight, 150));
+        var reset = debounce(updateContentHeight, 150);
+        addListener(windowElem, ["orientationchange", "resize"], reset);
 
         return this;
     };

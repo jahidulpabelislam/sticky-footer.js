@@ -11,24 +11,21 @@
         "jquery-plugin",
         "ecosystem:jquery"
     ],
-    "homepage": "https://github.com/jahidulpabelislam/sticky-footer#readme",
+    "homepage": "https://github.com/jahidulpabelislam/sticky-footer.js/#readme",
     "bugs": {
-        "url": "https://github.com/jahidulpabelislam/sticky-footer/issues"
+        "url": "https://github.com/jahidulpabelislam/sticky-footer.js/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jahidulpabelislam/sticky-footer.git"
+        "url": "git+https://github.com/jahidulpabelislam/sticky-footer.js.git"
     },
     "license": "GPL-3.0",
     "author": "Jahidul Pabel Islam <me@jahidulpabelislam.com>",
     "main": "./src/sticky-footer.min.js",
     "devDependencies": {
-        "eslint": "^5.16.0",
-        "eslint-config-prettier": "^6.9.0",
-        "eslint-plugin-prettier": "^3.1.2",
+        "@jahidulpabelislam/codestyles": "^1.0.2",
         "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
-        "gulp-uglify": "^3.0.2",
-        "prettier": "1.19.1"
+        "gulp-uglify": "^3.0.2"
     }
 }
