@@ -3,4 +3,5 @@ module.exports = {
     globals: {
         "StickyFooter": false,
     },
+    root: true,
 };
