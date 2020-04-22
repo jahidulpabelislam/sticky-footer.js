@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Converted into an official jQuery plugin
+## [2.0.0] - 2020-04-22
+
+### Changed
+
+-   Converted into an official jQuery plugin
 
 ## [1.3.1] - 2020-02-03
 
@@ -95,7 +99,8 @@ Converted into an official jQuery plugin
 
 -   First release! :fire:
 
-[unreleased]: https://github.com/jahidulpabelislam/sticky-footer.js/compare/v1.3.1...HEAD
+[unreleased]: https://github.com/jahidulpabelislam/sticky-footer.js/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/jahidulpabelislam/sticky-footer.js/compare/v1.3.1...v2.0.0
 [1.3.1]: https://github.com/jahidulpabelislam/sticky-footer.js/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/jahidulpabelislam/sticky-footer.js/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/jahidulpabelislam/sticky-footer.js/compare/v1.2.1...v1.2.2
