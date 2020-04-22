@@ -1,5 +1,5 @@
 ;/**
- * A jQuery plugin that is used to create a sticky footer effect.
+ * A jQuery plugin that is used to create a sticky footer.
  *
  * @version 2.0.0
  * @license: GPL-3.0

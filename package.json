@@ -1,7 +1,7 @@
 {
     "name": "sticky-footer.js",
     "version": "2.0.0",
-    "description": "A jQuery library to create a sticky footer",
+    "description": "jQuery plugin to create a sticky footer",
     "keywords": [
         "Footer",
         "JavaScript",

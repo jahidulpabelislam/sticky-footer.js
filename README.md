@@ -12,7 +12,7 @@
 
 ## What?
 
-A very small and lightweight library to create a sticky footer effect just using JavaScript & jQuery.
+A very small and lightweight plugin to create a sticky footer just using JavaScript/jQuery.
 
 If the original/normal height of the page is shorter than the window height, the library will extend the 'main content' element to fill the remaining space. This will essentially push the `footer` element down to the bottom of the page creating the sticky footer.
 
@@ -24,8 +24,8 @@ If the original/normal height of the page is shorter than the window height, the
 
 ## Why?
 
-I decided to create this library as I have found myself recreating and using this effect/code in all my projects, so thought it would be better to only have it in one place.
-This makes it easier to maintain all uses of this effect. While also helping the developer community, with this small helper library for the front-end.
+I decided to create this plugin as I have found myself recreating and using this effect/code in all my projects, so thought it would be better to only have it in one place.
+This makes it easier to maintain all uses of this effect. While also helping the developer community, with this small helper plugin for the front-end.
 
 ## How?
 
@@ -46,7 +46,7 @@ You can install it in various ways:
 
 Next insert the script link into your HTML (`sticky-footer.min.js` or `sticky-footer.js`).
 
-Then in your JavaScript file, call the StickyFooter.js function by `jQuery(mainContentSelector).adjustHeightForScreen();` (for example `jQuery('.main-content').adjustHeightForScreen();`)
+Then in your JavaScript, call the StickyFooter.js function by `jQuery({mainContentSelector}).adjustHeightForScreen();` (for example `jQuery(".main-content").adjustHeightForScreen();`)
 
 ## Support
 
