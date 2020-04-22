@@ -51,13 +51,13 @@
         element[adder](events.join(" "), callback);
     };
 
+    // Store jQuery objects of global elements for all instances
+    var windowElem = getElem(window);
+    var htmlElem = getElem("html");
+
     jQuery.fn.adjustHeightForScreen = function() {
 
-        /**
-         * Store global variables for the instance
-         */
-        var windowElem = getElem(window);
-        var htmlElem = getElem("html");
+        // The jQuery object for the instance
         var mainContentElem = getElem(this);
 
         /**
