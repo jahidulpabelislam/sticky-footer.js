@@ -7,7 +7,7 @@
 ![npm](https://img.shields.io/npm/v/sticky-footer.js.svg)
 ![npm](https://img.shields.io/npm/dm/sticky-footer.js.svg)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/jahidulpabelislam/sticky-footer.js.svg)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/jahidulpabelislam/sticky-footer.js/master.svg?label=last%20release)![npm bundle size](https://img.shields.io/bundlephobia/min/sticky-footer.js.svg)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/jahidulpabelislam/sticky-footer.js/2.x.svg?label=last%20release)![npm bundle size](https://img.shields.io/bundlephobia/min/sticky-footer.js.svg)
 ![NPM](https://img.shields.io/npm/l/sticky-footer.js.svg)
 
 ## What?
